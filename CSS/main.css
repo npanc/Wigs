@@ -1,0 +1,135 @@
+.wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "aside header"
+    "aside main";
+  grid-template-columns: 252px 1fr;
+  grid-template-rows: 252px 1fr;
+}
+
+.aside {
+  grid-area: aside;
+  background: white;
+  padding: 51px 55px;
+}
+
+.aside ul {
+  display: grid;
+  gap: 30px;
+}
+
+.aside li {
+  padding-left: 35px;
+  position: relative;
+}
+
+.aside li:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  left: 0%;
+  position: absolute;
+}
+
+.aside .new-in:before {
+  background-image: url("../img/icons/electro.png");
+}
+.aside .cloth:before {
+  background-image: url("../img/icons/cloth.png");
+}
+
+.aside .shoes:before {
+  background-image: url("../img/icons/boot.png");
+}
+.aside .access:before {
+  background-image: url("../img/icons/bag.png");
+}
+.aside .actwear:before {
+  background-image: url("../img/icons/sport.png");
+}
+.aside .gift:before {
+  background-image: url("../img/icons/gift.png");
+}
+.aside .inspiration:before {
+  background-image: url("../img/icons/diamond.png");
+}
+.aside nav a {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 15.7099px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.header {
+  grid-area: header;
+}
+
+.header ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 46px;
+  margin-right: 46px;
+  gap: 42px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+}
+
+
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+  grid-template-areas:
+                  "block1  block2"
+                  "block1  block2";
+            
+    }
+
+.main .block1 {
+  width: 539px;
+  height: 180px;
+  left: 289px;
+  top: 143px;
+  margin-left: 37px;  
+  margin-top: 66px;   
+  }
+
+.main .block2 {
+  width: 598px;
+  height: 399px;
+  left: 806px;
+  top: 536px;
+  margin-left: 21px;  
+  margin-top: 66px; 
+}
+
+.blok1 {
+  grid-area: block1;
+  
+}
+
+.block2 {
+  grid-area: block2;
+  
+}
+
+.main img {
+  max-width: 539px;
+}
+.explore {
+  margin-top: 57px;
+  margin-bottom: 54px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+}
